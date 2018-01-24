@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Noura Calculator</string>
+    <string name="int1">integer 1</string>
+    <string name="int2">integer 2</string>
+    <string name="op">operation</string>
+    <string name="calculate">calculate</string>
+    <string name="result">result</string>
+    <string name="minus">-</string>
+    <string name="mult">*</string>
+    <string name="div">/</string>
+    <string name="plus">+</string>
+</resources>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.nouracalculator.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="82dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/int1"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="84dp"
+        android:layout_height="27dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/int2"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/int1id"
+        android:layout_width="149dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:inputType="numberSigned"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:background="@color/colorAccent" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="150dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="44dp"
+        android:background="@color/colorAccent"
+        android:backgroundTint="@color/colorAccent"
+        android:ems="10"
+        android:inputType="numberSigned"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/int1id" />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="64dp"
+        android:text="@string/op"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/calcid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="160dp"
+        android:layout_marginLeft="124dp"
+        android:text="@string/calculate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/result"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/resultid"
+        android:layout_width="127dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="28dp"
+        android:layout_marginLeft="72dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/calcid"
+        app:layout_constraintStart_toEndOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/plusid"
+        android:layout_width="40dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="56dp"
+        android:text="@string/plus"
+        app:layout_constraintBottom_toTopOf="@+id/resultid"
+        app:layout_constraintStart_toEndOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/minusid"
+        android:layout_width="38dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/minus"
+        app:layout_constraintBottom_toTopOf="@+id/resultid"
+        app:layout_constraintStart_toEndOf="@+id/plusid" />
+
+    <Button
+        android:id="@+id/multid"
+        android:layout_width="37dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="12dp"
+        android:text="@string/mult"
+        app:layout_constraintBottom_toTopOf="@+id/resultid"
+        app:layout_constraintStart_toEndOf="@+id/minusid" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="38dp"
+        android:layout_height="42dp"
+        android:text="@string/div"
+        app:layout_constraintBottom_toBottomOf="@+id/multid"
+        app:layout_constraintStart_toEndOf="@+id/multid" />
+
+</android.support.constraint.ConstraintLayout>
