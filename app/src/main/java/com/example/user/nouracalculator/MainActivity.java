@@ -6,7 +6,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
-import android.widget.RadioGroup;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -15,14 +14,12 @@ public class MainActivity extends AppCompatActivity {
     RadioButton minusbtn;
     RadioButton multbtn;
     RadioButton divbtn;
-//    RadioGroup rg;
-//    RadioButton rb;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        rg=this.findViewById(R.id.rgid);
         plusbtn =this.findViewById(R.id.plusid);
         minusbtn =this.findViewById(R.id.minusid);
         multbtn =this.findViewById(R.id.multid);
@@ -34,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
         final Double[] result = {0.0};
 
-
+        //added comment 1
 
         Button calcbtn=this.findViewById(R.id.calcid);
 
@@ -96,11 +93,4 @@ public class MainActivity extends AppCompatActivity {
         }
         return result;
     }
-
-//    public  void rbclick(View v)
-//    {
-//        int rbid=rg.getCheckedRadioButtonId();
-//        rb=findViewById(rbid);
-//
-//    }
 }
