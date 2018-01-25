@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         final Double[] result = {0.0};
 
         //added comment 1
+        int x=0;
 
         Button calcbtn=this.findViewById(R.id.calcid);
 
