@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         final EditText int1txt =this.findViewById(R.id.int1id);
         final EditText int2txt =this.findViewById(R.id.int2id);
         final TextView resulttxt =this.findViewById(R.id.resultid);
-
+		//added comment 2
         final Double[] result = {0.0};
 
 
